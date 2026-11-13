@@ -37,4 +37,7 @@ jobs:
       # 4. Execute SonarCloud scan (at this point coverage.xml already exists)
       - uses: SonarSource/sonarqube-scan-action@v6
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+             args: >
+                 -Dsonar.verbose=true
