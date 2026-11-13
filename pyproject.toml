@@ -151,3 +151,6 @@ ignore_missing_imports = true
 # missing-OK. When installed, its real (py.typed) types are used.
 module = ["jsonschema.*"]
 ignore_missing_imports = true
+
+[tool.coverage.run]
+relative_files = true
